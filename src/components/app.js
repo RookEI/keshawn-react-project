@@ -12,9 +12,11 @@ import Home from "./pages/home.js";
 import About from "./pages/about.js";
 import Contact from "./pages/contact";
 import Blog from "./pages/blog";
-import PortfolioDetail from "./portfolio/portfolio-detail";
+import PortfolioDetail from "./portfolio/portfolio-detail.js";
+import NoMatch from "./pages/no-match.js";
 
 export default class App extends Component {
+
   render() {
     return (
       <div className='app'>
@@ -31,6 +33,7 @@ export default class App extends Component {
               <Route path="/contact" component={Contact} />
               <Route path="/blog" component={Blog} />
               <Route path="/portfolio/:slug" component={PortfolioDetail} />
+              <Route component={NoMatch} />
             </Switch>
           </div>
         </Router>
