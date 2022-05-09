@@ -39,17 +39,17 @@ module.exports = webpackMerge(webpackCommon, {
           },
           {
             loader: 'css-loader',
-            options: {
+           /* options: {
               importLoaders: 2
-            }
+            }*/
           },
           {
             loader: 'sass-loader',
-            options: {
+            /* options: {
               outputStyle: 'expanded',
               sourceMap: true,
               sourceMapContents: true
-            }
+            } */
           }
         ]
       }
