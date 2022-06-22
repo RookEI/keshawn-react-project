@@ -104,11 +104,12 @@ class Blog extends Component {
         modalIsOpen={this.state.blogModalIsOpen}
         />
 
+        {this.props.loggedInStatus === "LOGGED_IN" ?
         <div className="new-blog-link">
           <a onClick={this.handleNewBlogClick}>
-            Open Modal!
+            <FontAwesomeIcon icon="plus-circle" />
           </a>
-        </div>
+        </div> : null}
 
           <div className="content-container">{blogRecords}</div>
 
